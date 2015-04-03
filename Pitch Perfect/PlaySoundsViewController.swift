@@ -14,10 +14,21 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayer:AVAudioPlayer!
     
     @IBAction func slowSound(sender: UIButton) {
+        audioPlayer.stop()
         audioPlayer.rate = 0.5
+        audioPlayer.currentTime = 0.0
         audioPlayer.play()
 
        
+    }
+    @IBAction func stopSound(sender: UIButton) {
+        audioPlayer.stop()
+    }
+    @IBAction func speedSound(sender: UIButton) {
+        audioPlayer.stop()
+        audioPlayer.rate = 2
+        audioPlayer.currentTime = 0.0
+        audioPlayer.play()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
