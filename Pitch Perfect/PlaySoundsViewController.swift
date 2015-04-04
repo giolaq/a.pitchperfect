@@ -12,6 +12,7 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
 
     var audioPlayer:AVAudioPlayer!
+    var receivedAudio:RecordedAudio!
     
     @IBAction func slowSound(sender: UIButton) {
         audioPlayer.stop()
@@ -34,14 +35,16 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
         
         // Grab the path, make sure to add it to your project!
-        if var movieSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")!) {
-             audioPlayer = AVAudioPlayer(contentsOfURL: movieSound, error: nil)
-             audioPlayer.enableRate = true
-            
-        } else
-        {
-            println("Error locating audio")
-        }
+//        if var movieSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")!) {
+//             audioPlayer = AVAudioPlayer(contentsOfURL: movieSound, error: nil)
+//             audioPlayer.enableRate = true
+//            
+//        } else
+//        {
+//            println("Error locating audio")
+//        }
+        audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        audioPlayer.enableRate = true
 
         // Do any additional setup after loading the view.
     }

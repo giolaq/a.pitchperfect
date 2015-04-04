@@ -8,7 +8,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordAudioViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -39,7 +39,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zm3-By-tZN"/>
-                                    <segue destination="j4g-aV-IaC" kind="show" id="ynY-2R-uFj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,11 +91,12 @@
                         <outlet property="recordButton" destination="D88-F3-JF8" id="Gi7-kh-kVh"/>
                         <outlet property="recordingLabel" destination="Ar5-I3-ygz" id="nKg-3l-Y2B"/>
                         <outlet property="stopButton" destination="Fy0-Nm-8B0" id="HZI-e1-Ggy"/>
+                        <segue destination="j4g-aV-IaC" kind="show" identifier="stopRecording" id="Dnl-n2-oyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1137" y="398"/>
+            <point key="canvasLocation" x="1115" y="378"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="0at-Zj-D7W">

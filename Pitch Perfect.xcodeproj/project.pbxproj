@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA09473F1AD0201E00C95068 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA09473E1AD0201E00C95068 /* RecordedAudio.swift */; };
+		CA0947421AD0230B00C95068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0947401AD0230B00C95068 /* Main.storyboard */; };
 		CA4896841ACF30EA003D6D94 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4896831ACF30EA003D6D94 /* PlaySoundsViewController.swift */; };
 		CA4896881ACF359E003D6D94 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA4896871ACF359E003D6D94 /* movie_quote.mp3 */; };
 		CA6FA29E1AAE46D5004C7939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FA29D1AAE46D5004C7939 /* AppDelegate.swift */; };
-		CA6FA2A01AAE46D5004C7939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FA29F1AAE46D5004C7939 /* ViewController.swift */; };
-		CA6FA2A31AAE46D5004C7939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6FA2A11AAE46D5004C7939 /* Main.storyboard */; };
+		CA6FA2A01AAE46D5004C7939 /* RecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FA29F1AAE46D5004C7939 /* RecordAudioViewController.swift */; };
 		CA6FA2A51AAE46D5004C7939 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6FA2A41AAE46D5004C7939 /* Images.xcassets */; };
 		CA6FA2A81AAE46D5004C7939 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6FA2A61AAE46D5004C7939 /* LaunchScreen.xib */; };
 		CA6FA2B41AAE46D6004C7939 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6FA2B31AAE46D6004C7939 /* Pitch_PerfectTests.swift */; };
@@ -28,13 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA09473E1AD0201E00C95068 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		CA0947411AD0230B00C95068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Pitch Perfect/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		CA4896831ACF30EA003D6D94 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		CA4896871ACF359E003D6D94 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../../../Downloads/movie_quote.mp3; sourceTree = "<group>"; };
 		CA6FA2981AAE46D5004C7939 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6FA29C1AAE46D5004C7939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6FA29D1AAE46D5004C7939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA6FA29F1AAE46D5004C7939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA6FA2A21AAE46D5004C7939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA6FA29F1AAE46D5004C7939 /* RecordAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAudioViewController.swift; sourceTree = "<group>"; };
 		CA6FA2A41AAE46D5004C7939 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA6FA2A71AAE46D5004C7939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CA6FA2AD1AAE46D6004C7939 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 		CA6FA28F1AAE46D5004C7939 = {
 			isa = PBXGroup;
 			children = (
+				CA09473E1AD0201E00C95068 /* RecordedAudio.swift */,
 				CA6FA29A1AAE46D5004C7939 /* Pitch Perfect */,
 				CA6FA2B01AAE46D6004C7939 /* Pitch PerfectTests */,
 				CA6FA2991AAE46D5004C7939 /* Products */,
@@ -81,9 +84,9 @@
 		CA6FA29A1AAE46D5004C7939 /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				CA0947401AD0230B00C95068 /* Main.storyboard */,
 				CA6FA29D1AAE46D5004C7939 /* AppDelegate.swift */,
-				CA6FA29F1AAE46D5004C7939 /* ViewController.swift */,
-				CA6FA2A11AAE46D5004C7939 /* Main.storyboard */,
+				CA6FA29F1AAE46D5004C7939 /* RecordAudioViewController.swift */,
 				CA4896831ACF30EA003D6D94 /* PlaySoundsViewController.swift */,
 				CA6FA2A41AAE46D5004C7939 /* Images.xcassets */,
 				CA6FA2A61AAE46D5004C7939 /* LaunchScreen.xib */,
@@ -199,10 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA6FA2A31AAE46D5004C7939 /* Main.storyboard in Resources */,
 				CA6FA2A81AAE46D5004C7939 /* LaunchScreen.xib in Resources */,
 				CA4896881ACF359E003D6D94 /* movie_quote.mp3 in Resources */,
 				CA6FA2A51AAE46D5004C7939 /* Images.xcassets in Resources */,
+				CA0947421AD0230B00C95068 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA6FA2A01AAE46D5004C7939 /* ViewController.swift in Sources */,
+				CA09473F1AD0201E00C95068 /* RecordedAudio.swift in Sources */,
+				CA6FA2A01AAE46D5004C7939 /* RecordAudioViewController.swift in Sources */,
 				CA4896841ACF30EA003D6D94 /* PlaySoundsViewController.swift in Sources */,
 				CA6FA29E1AAE46D5004C7939 /* AppDelegate.swift in Sources */,
 			);
@@ -245,12 +249,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CA6FA2A11AAE46D5004C7939 /* Main.storyboard */ = {
+		CA0947401AD0230B00C95068 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA6FA2A21AAE46D5004C7939 /* Base */,
+				CA0947411AD0230B00C95068 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CA6FA2A61AAE46D5004C7939 /* LaunchScreen.xib */ = {
