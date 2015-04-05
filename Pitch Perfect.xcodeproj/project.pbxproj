@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA09473E1AD0201E00C95068 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		CA09473E1AD0201E00C95068 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedAudio.swift; path = ../RecordedAudio.swift; sourceTree = "<group>"; };
 		CA0947411AD0230B00C95068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Pitch Perfect/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		CA4896831ACF30EA003D6D94 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		CA4896871ACF359E003D6D94 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../../../Downloads/movie_quote.mp3; sourceTree = "<group>"; };
@@ -65,7 +65,6 @@
 		CA6FA28F1AAE46D5004C7939 = {
 			isa = PBXGroup;
 			children = (
-				CA09473E1AD0201E00C95068 /* RecordedAudio.swift */,
 				CA6FA29A1AAE46D5004C7939 /* Pitch Perfect */,
 				CA6FA2B01AAE46D6004C7939 /* Pitch PerfectTests */,
 				CA6FA2991AAE46D5004C7939 /* Products */,
@@ -84,6 +83,7 @@
 		CA6FA29A1AAE46D5004C7939 /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				CA09473E1AD0201E00C95068 /* RecordedAudio.swift */,
 				CA0947401AD0230B00C95068 /* Main.storyboard */,
 				CA6FA29D1AAE46D5004C7939 /* AppDelegate.swift */,
 				CA6FA29F1AAE46D5004C7939 /* RecordAudioViewController.swift */,
