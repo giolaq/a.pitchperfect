@@ -158,6 +158,15 @@
                                     <action selector="playDarthvaderAudio:" destination="j4g-aV-IaC" eventType="touchUpInside" id="FsE-ut-pJR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99L-hz-h9x">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="echo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playEcho:" destination="j4g-aV-IaC" eventType="touchUpInside" id="wNl-lP-1M7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -166,6 +175,8 @@
                             <constraint firstItem="zxO-59-zdd" firstAttribute="leading" secondItem="xTA-gC-G9c" secondAttribute="leadingMargin" constant="55" id="Hx9-Ud-I7Y"/>
                             <constraint firstItem="ALd-S9-vzK" firstAttribute="top" secondItem="JGG-5v-2me" secondAttribute="bottom" constant="95" id="NH1-C6-xY8"/>
                             <constraint firstItem="Ukx-7g-lKa" firstAttribute="top" secondItem="toX-7x-zLX" secondAttribute="bottom" constant="35" id="SQQ-po-ADW"/>
+                            <constraint firstAttribute="centerX" secondItem="99L-hz-h9x" secondAttribute="centerX" id="THd-yf-EfY"/>
+                            <constraint firstAttribute="centerY" secondItem="99L-hz-h9x" secondAttribute="centerY" constant="-152" id="Yn3-9B-xAe"/>
                             <constraint firstAttribute="centerY" secondItem="PHC-lP-n9q" secondAttribute="centerY" constant="-255" id="Zsh-0c-MEe"/>
                             <constraint firstAttribute="centerX" secondItem="PHC-lP-n9q" secondAttribute="centerX" id="azN-vb-wvk"/>
                             <constraint firstItem="toX-7x-zLX" firstAttribute="top" secondItem="JGG-5v-2me" secondAttribute="bottom" constant="95" id="bfm-9r-SlN"/>
@@ -177,12 +188,15 @@
                             <mask key="subviews">
                                 <exclude reference="zxO-59-zdd"/>
                                 <exclude reference="Ukx-7g-lKa"/>
+                                <exclude reference="99L-hz-h9x"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Eb7-B3-UWn"/>
                                 <exclude reference="Hx9-Ud-I7Y"/>
                                 <exclude reference="SQQ-po-ADW"/>
                                 <exclude reference="lP9-3A-OWJ"/>
+                                <exclude reference="THd-yf-EfY"/>
+                                <exclude reference="Yn3-9B-xAe"/>
                                 <exclude reference="Zsh-0c-MEe"/>
                                 <exclude reference="azN-vb-wvk"/>
                                 <exclude reference="hfC-JM-H7E"/>
@@ -192,12 +206,15 @@
                             <mask key="subviews">
                                 <include reference="zxO-59-zdd"/>
                                 <include reference="Ukx-7g-lKa"/>
+                                <include reference="99L-hz-h9x"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Eb7-B3-UWn"/>
                                 <include reference="Hx9-Ud-I7Y"/>
                                 <include reference="SQQ-po-ADW"/>
                                 <include reference="lP9-3A-OWJ"/>
+                                <include reference="THd-yf-EfY"/>
+                                <include reference="Yn3-9B-xAe"/>
                                 <include reference="Zsh-0c-MEe"/>
                                 <include reference="azN-vb-wvk"/>
                                 <include reference="hfC-JM-H7E"/>
@@ -231,6 +248,7 @@
     <resources>
         <image name="chipmunk" width="100" height="100"/>
         <image name="darthvader" width="100" height="100"/>
+        <image name="echo" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
         <image name="speed" width="100" height="100"/>

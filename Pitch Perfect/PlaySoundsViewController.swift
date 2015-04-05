@@ -40,6 +40,28 @@ class PlaySoundsViewController: UIViewController {
     }
     
 
+    @IBAction func playEcho(sender: UIButton) {
+    
+            audioPlayer.stop()
+            audioEngine.stop()
+            audioEngine.reset()
+            
+            var audioPlayerNode = AVAudioPlayerNode()
+            audioEngine.attachNode(audioPlayerNode)
+            
+            var changeEchoEffect = AVAudioUnitDelay()
+            changeEchoEffect.delayTime = 1
+            audioEngine.attachNode(changeEchoEffect)
+            
+            audioEngine.connect(audioPlayerNode, to: changeEchoEffect, format: nil)
+            audioEngine.connect(changeEchoEffect, to: audioEngine.outputNode, format: nil)
+            
+            audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+            audioEngine.startAndReturnError(nil)
+            
+            audioPlayerNode.play()
+    }
+    
     @IBAction func playDarthvaderAudio(sender: UIButton) {
         audioPlayer.stop()
         audioEngine.stop()
