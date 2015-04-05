@@ -13,7 +13,54 @@ class PlaySoundsViewController: UIViewController {
 
     var audioPlayer:AVAudioPlayer!
     var receivedAudio:RecordedAudio!
+    var audioFile:AVAudioFile!
+
+    var audioEngine: AVAudioEngine!
+
+    @IBAction func playChipmunk(sender: UIButton) {
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+        
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        
+        var changePitchEffect = AVAudioUnitTimePitch()
+        changePitchEffect.pitch = 1000
+        audioEngine.attachNode(changePitchEffect)
+        
+        audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
+        audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        audioEngine.startAndReturnError(nil)
+        
+        audioPlayerNode.play()
+
+    }
     
+
+    @IBAction func playDarthvaderAudio(sender: UIButton) {
+        audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+        
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        
+        var changePitchEffect = AVAudioUnitTimePitch()
+        changePitchEffect.pitch = -1000
+        audioEngine.attachNode(changePitchEffect)
+        
+        audioEngine.connect(audioPlayerNode, to: changePitchEffect, format: nil)
+        audioEngine.connect(changePitchEffect, to: audioEngine.outputNode, format: nil)
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        audioEngine.startAndReturnError(nil)
+        
+        audioPlayerNode.play()
+
+    }
     @IBAction func slowSound(sender: UIButton) {
         audioPlayer.stop()
         audioPlayer.rate = 0.5
@@ -44,7 +91,10 @@ class PlaySoundsViewController: UIViewController {
 //            println("Error locating audio")
 //        }
         audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        audioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
+
         audioPlayer.enableRate = true
+        audioEngine = AVAudioEngine()
 
         // Do any additional setup after loading the view.
     }
